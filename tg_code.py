@@ -2,7 +2,7 @@ import requests
 import base64
 import json
 
-#验证码平台https://truecaptcha.org/，每天免费100次
+#验证码平台https://truecaptcha.org/，每天免费100次验证
 def truecaptcha():
     with open("1.jpg", 'rb') as f:
         image_base64 = base64.b64encode(f.read())
