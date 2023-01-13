@@ -8,7 +8,7 @@ import tg_code
 class bot_check():
     def bot_pic(bot_id,messages):
         # client.send_message(bot_id, bot_command)  # 第一项是机器人ID，第二项是发送的文字
-        # time.sleep(2)  # 延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
+        # time.sleep(2)  # 延时2秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
         # messages = client.get_messages(bot_id)
         time.sleep(2)
         messages[0].download_media(file="1.jpg")
