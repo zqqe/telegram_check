@@ -18,8 +18,8 @@ def tg_qd(tg_bot,tg_command):
 
 
 
-api_id = [7047794]	#输入api_id，一个账号一项
-api_hash = ['4648c6c14b86a7a90aa9e7b82f73e245']	#输入api_hash，一个账号一项
+api_id = [0123456, 6543210]	#输入api_id，一个账号一项
+api_hash = ['0123456789abcdef0123456789abcdef', 'abcdef0123456789abcdef0123456789']	#输入api_hash，一个账号一项
 session_name = api_id[:]
 bots_commands=["@blueseamusic_bot","/checkin","成功"]
 for num in range(len(api_id)):
