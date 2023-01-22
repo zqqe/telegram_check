@@ -28,7 +28,7 @@ class bot_check():
         messages = client.get_messages(bot_id)
         time.sleep(2)
         pic_name=messages[0].download_media()
-        the_code = tg_code2.truecaptcha(pic_name)
+        the_code = tg_code2.ddocr(pic_name)
         client.send_message(bot_id, the_code)
         time.sleep(5)
         messages = client.get_messages(bot_id)
@@ -43,7 +43,7 @@ class bot_check():
         time.sleep(2)
         pic_name=messages[0].download_media()
         time.sleep(2)
-        the_code = tg_code2.truecaptcha(pic_name)
+        the_code = tg_code2.ddocr(pic_name)
 
         res = messages[0].click(text=the_code)#根据打码平台的返回结果点击内联键盘，若无法对应返回None
         if str(res) == "None":
@@ -93,4 +93,4 @@ for num in range(len(api_id)):
         except:
             continue
 os._exit(0)
-remove_pic()
+remove_pic() #删除下载的验证码图片
