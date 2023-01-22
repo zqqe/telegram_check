@@ -19,7 +19,7 @@ class bot_check():
         time.sleep(5)  # 延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
         messages = client.get_messages(bot_id)
         time.sleep(3)	#延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
-	    client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
+	client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
         return messages[0].message
 
     def bot_pic(client,bot_id,bot_command):
@@ -33,7 +33,7 @@ class bot_check():
         time.sleep(5)
         messages = client.get_messages(bot_id)
         time.sleep(3)	#延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
-	    client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
+	client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
         return messages[0].message
 
     def bot_inline(client,bot_id,bot_command):
@@ -51,7 +51,7 @@ class bot_check():
         time.sleep(5)
         messages = client.get_messages(bot_id)
         time.sleep(3)	#延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
-	    client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
+	client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
         return messages[0].message
 
 
