@@ -40,4 +40,11 @@ def ttshitu(pic_code):
     except:
         res='失败'
     return res
-#ttshitu()
+
+#ddddocr为本地打码 无需注册账号 
+def ddocr(pic_code):
+    ocr = ddddocr.DdddOcr(beta=True)
+    with open(pic_code, 'rb') as f:
+        image = f.read()
+    res = ocr.classification(image)
+    return res
