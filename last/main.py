@@ -18,6 +18,8 @@ class bot_check():
         client.send_message(bot_id, bot_command)  # 第一项是机器人ID，第二项是发送的文字
         time.sleep(5)  # 延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
         messages = client.get_messages(bot_id)
+        time.sleep(3)	#延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
+	    client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
         return messages[0].message
 
     def bot_pic(client,bot_id,bot_command):
@@ -30,6 +32,8 @@ class bot_check():
         client.send_message(bot_id, the_code)
         time.sleep(5)
         messages = client.get_messages(bot_id)
+        time.sleep(3)	#延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
+	    client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
         return messages[0].message
 
     def bot_inline(client,bot_id,bot_command):
@@ -46,6 +50,8 @@ class bot_check():
             messages[0].click(0)#打码不匹配就点击第一个
         time.sleep(5)
         messages = client.get_messages(bot_id)
+        time.sleep(3)	#延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
+	    client.send_read_acknowledge(bot_id)	#将机器人回应设为已读
         return messages[0].message
 
 
