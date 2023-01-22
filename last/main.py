@@ -69,7 +69,6 @@ def mess(client,chose,bot_id,bot_command,bot_key):
             if i >= 4:#不成功循环次数
                 break
     
-
 api_id = []  # 输入api_id，一个账号一项
 api_hash = []  # 输入api_hash，一个账号一项
 bots_connands = [["@charontv_bot","/checkin", "获得","1"],["@JMSIPTV_bot","/checkin", "成功","2"],["@blueseamusic_bot","/checkin", "成功","1"],["@svipxddosbot","签到领积分", "成功","0"]]#格式：["机器人id", "签到命令", "签到成功关键词", "验证类别:0最普通签到；1回复验证码；2点击验证内联键盘"]
