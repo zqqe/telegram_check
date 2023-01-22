@@ -4,7 +4,13 @@ telegram签到
 <font color=`#DC143C`>请放在空白文件夹，包含删除本文件夹内验证码jpg图片的代码</font>
 
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 ```
 pip3 install telethon
 pip3 install requests
