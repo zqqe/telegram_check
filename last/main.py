@@ -92,6 +92,5 @@ for num in range(len(api_id)):
             mess(client,bot_type,bot_id,bot_command,bot_key)
         except:
             continue
-
 os._exit(0)
 remove_pic()
