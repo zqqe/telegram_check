@@ -1,5 +1,11 @@
-# telegram_check_last
+# telegram_check
 telegram签到
+<font color=red>请放在空白文件夹，包含删除本文件夹内验证码jpg图片的代码</font>
+'''
+pip3 install telethon
+pip3 install requests
+'''
+
 仅支持以下两类验证码
 
 ![图片验证码](/pic/tianruo_2023-1-13-638092035331045066.png "图片验证码")
