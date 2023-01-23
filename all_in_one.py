@@ -41,7 +41,7 @@ class bot_check():
 
         res = messages[0].click(text=the_code)
         time.sleep(1)
-        if res == "None":
+        if str(res) == "None":
             messages[0].click(0)
         time.sleep(5)
         messages = client.get_messages(bot_id)
