@@ -15,7 +15,7 @@ def tg_qd(tg_bot,tg_command):
 
     res = messages[0].click(text=the_code)#点击返回验证码
     time.sleep(1)
-    if res == "None":#如果不存在这个验证码，就点第一个
+    if str(res) == "None":#如果不存在这个验证码，就点第一个
         messages[0].click(0)
     time.sleep(5)
     messages = client.get_messages(tg_bot)
