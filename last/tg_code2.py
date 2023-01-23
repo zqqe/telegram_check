@@ -1,7 +1,7 @@
 import requests
 import base64
 import json
-import ddddocr
+#import ddddocr
 
 #https://truecaptcha.org/每天免费100次
 def truecaptcha(pic_code):
@@ -43,9 +43,9 @@ def ttshitu(pic_code):
     return res
 
 #ddddocr为本地打码 无需注册账号 pip3 install ddddocr
-def ddocr(pic_code):
-    ocr = ddddocr.DdddOcr(beta=True)
-    with open(pic_code, 'rb') as f:
-        image = f.read()
-    res = ocr.classification(image)
-    return res
+# def ddocr(pic_code):
+#     ocr = ddddocr.DdddOcr(beta=True)
+#     with open(pic_code, 'rb') as f:
+#         image = f.read()
+#     res = ocr.classification(image)
+#     return res
