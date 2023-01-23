@@ -28,7 +28,7 @@ class bot_check():
         messages = client.get_messages(bot_id)
         time.sleep(2)
         pic_name=messages[0].download_media()
-        the_code = tg_code2.ddocr(pic_name) #可自行更换其它打码
+        the_code = tg_code2.truecaptcha(pic_name) #可自行更换其它打码
         client.send_message(bot_id, the_code)
         time.sleep(5)
         messages = client.get_messages(bot_id)
@@ -43,7 +43,7 @@ class bot_check():
         time.sleep(2)
         pic_name=messages[0].download_media()
         time.sleep(2)
-        the_code = tg_code2.ddocr(pic_name)#可自行更换其它打码
+        the_code = tg_code2.truecaptcha(pic_name)#可自行更换其它打码
 
         res = messages[0].click(text=the_code)#根据打码平台的返回结果点击内联键盘，若无法对应返回None
         if str(res) == "None":
