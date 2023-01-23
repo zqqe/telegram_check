@@ -92,5 +92,6 @@ for num in range(len(api_id)):
             mess(client,bot_type,bot_id,bot_command,bot_key)
         except:
             continue
-os._exit(0)
 remove_pic() #删除下载的验证码图片
+os._exit(0)
+
